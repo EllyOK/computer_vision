@@ -288,7 +288,7 @@ def downsample(X,CL):
     X_reb = np.arange(0).reshape(0, X.shape[1])
     CL_reb = np.arange(0)
     for i in range(len(CL)):
-        if CL[i] == majority and randn() <= threshold:
+        if CL[i] == majority and np.random.random() <= threshold:
             ## removing record
             n +=1
         else:
